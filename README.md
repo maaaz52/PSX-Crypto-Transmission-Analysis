@@ -1,29 +1,28 @@
-# PSX vs. Crypto: Sentiment & Price Transmission Analysis (2025-2026)
+# Comparison between PSX and Crypto: Sentiment and Price Transmissions (2025-2026)
 
-This repository contains the complete computational, machine learning, and econometric pipeline developed for a Master's Thesis investigating how international digital asset markets interact with domestic equity valuations in developing economies.
+This repository holds the entire computational, machine learning and econometrics pipeline created for research analyzing the relationship between international cryptocurrency markets and the valuation of domestic equities in emerging countries.
 
-## Project Overview
-Using a data pipeline spanning 2025 to 2026, this study isolates the behavioral and financial transmission channels from global crypto ecosystems into the **Pakistan Stock Exchange (PSX KSE-100)**. 
+## Project Description
+Based on a data pipeline covering 2025 to 2026, this research focuses on behavioral and financial transmissions from international cryptocurrency ecosystems into the **Pakistan Stock Exchange (PSX KSE-100)**.
 
-The analytical engine splits the investigation into two distinct dimensions:
-1. **The Behavioral Channel:** Natural Language Processing (NLP) sentiment scoring of ~50,000 retail crypto-centric digital texts.
-2. **The Capital Channel:** Cross-asset macro price transmission modeling using actual financial historical closing prices.
+The analytical pipeline breaks down the research into two separate streams:
+1. **Behavioral Channel:** The NLP sentiment scoring of ~50,000 crypto-based digital content.
+2. **Capital Channel:** Macro price transmissions between assets with actual financial historical closing prices.
 
 ## Algorithmic & Methodological Structure
-The codebase consists of an end-to-end framework organized as follows:
-* **Sentiment Extraction:** Leverages **FinBERT** (Financial Bidirectional Encoder Representations from Transformers) to generate a daily composite public sentiment score ranging from -1 to +1.
-* **Predictive Machine Learning:** Deploys a **Random Forest Regressor** with non-linear lagged feature matrices to model predictive out-of-sample forecasting variations.
-* **Directional Causality:** Computes a multi-lag **Granger Causality Test** to uncover structural time-lagged data pathways.
+The codebase includes an end-to-end pipeline structured as follows:
+* **Sentiment Extraction:** Using **FinBERT** (Financial Bidirectional Encoder Representations from Transformers) to compute a daily composite public sentiment score between -1 and +1.
+* **Predictive Machine Learning:** Using a **Random Forest Regressor** with non-linear lagged feature matrixes to predict variations out-of-sample.
+* **Causality Detection:** Computing multi-lag **Granger Causality Test** to discover structural time-lagged paths in the data.
+## Primary Empirical Results
 
-## Core Empirical Findings
+### 1. The Sentiment Decoupling (Behavioral)
+* **Conclusion:** Descriptive statistics indicate that the relationship between daily retail sentiment and PSX returns is characterized by an almost zero Pearson correlation coefficient (-0.064).
+* **Inference:** The Pakistani stock market is perfectly shielded from the influence of international crypto social media buzz.
 
-### 1. The Sentiment Detachment (Behavioral)
-* **Result:** Descriptive statistics reveal a flat, near-zero Pearson correlation coefficient (-0.064) between daily retail sentiment and PSX returns.
-* **Conclusion:** The local Pakistani equity market is completely insulated against global digital asset social media hype.
-
-### 2. The Multi-Day Price Transmission (Macro Capital)
-* **Result:** Granger Causality analysis demonstrates high statistical significance across **Lags 1 through 4** ($p < 0.05$).
-* **Conclusion:** Actual capital adjustments in the Bitcoin market possess explicit, delayed predictive power over the PSX that ripples sequentially through the Karachi exchange for exactly 4 days before decaying on Day 5.
+### 2. The Multi-Day Price Propagation (Macro Capital)
+* **Conclusion:** The Granger Causality test indicates significant statistical correlation at the **lags of 1 to 4 days** ($p<0.05$).
+* **Inference:** The actual capital moves in the Bitcoin market have specific delayed predictive value on the PSX that propagates successively over 4 days in the Karachi stock exchange.
 
 ---
-*For questions, methodology replications, or academic citations regarding this dataset, please contact the author or open an Issue in this repository.*
+*In case of any inquiries related to this data set, please feel free to reach out to the author or create an Issue here.*
